@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/usr/bin/python3
 """Module for FileStorage class"""
 from models.base_model import BaseModel
@@ -32,4 +31,3 @@ class FileStorage:
                 new_dict = json.load(file)
         except FileNotFoundError:
             return
->>>>>>> 5150b63df80504f659e16812f5049e459ebd455e
