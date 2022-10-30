@@ -2,7 +2,7 @@
 from uuid import uuid4
 import json
 from datetime import datetime
-#from __init__ import storage
+from __init__ import storage
 
 
 class BaseModel:
