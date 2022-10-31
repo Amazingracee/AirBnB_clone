@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
+"""A model containing a class"""
 from uuid import uuid4
-import json
 from datetime import datetime
-from __init__ import storage
+from models import storage
 
 
 class BaseModel:
+    """A BaseModel class that defines all common attributes/methods for other classes"""
     def __init__(self, *args, **kwargs):
         if kwargs:
             for key, value in kwargs.items():
@@ -35,13 +36,3 @@ class BaseModel:
             instance_dict["created_at"] = self.created_at.isoformat()
             instance_dict["updated_at"] = self.updated_at.isoformat()
             return instance_dict
-
-    def save_json_to_file(self, filename):
-        '''Saves instance of BaseModel to a file'''
-        with open(filename, "w", encoding="utf-8") as f:
-            json.dump(self.to_dict(), f)
-
-    def load_json_from_file(filename):
-        '''loads an instance of BaseModel from a file'''
-        with open(filename, "r", encoding="utf-8") as f:
-            return json.load(f)
