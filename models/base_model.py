@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""A model containing a class"""
+"""A module containing a class"""
 from uuid import uuid4
 from datetime import datetime
 from models import storage
-
 
 class BaseModel:
     """A BaseModel class that defines all common attributes/methods for other classes"""
