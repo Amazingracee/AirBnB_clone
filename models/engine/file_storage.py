@@ -26,7 +26,7 @@ class FileStorage:
             json.dump(serial_dict, f)
 
     def reload(self):
-        """Deserialize the JSON in __file_path if it exists"""
+        """Deserializes the JSON in __file_path if it exists"""
         try:
             with open(FileStorage.__file_path, "r", encoding="utf-8") as f:
                 deserial = json.load(f)
