@@ -3,6 +3,7 @@
 from models.base_model import BaseModel
 import json
 
+
 class FileStorage:
     """Class that serializes basemodel instances."""
     __filepath = file.json
@@ -16,10 +17,11 @@ class FileStorage:
         """sets in __objects the obj with key <obj class name>.id"""
         key = "{}.{}".format(type(obj).__name__, obj.id)
         FileStorage.__objects[key] = obj
-    
+
     def save(self):
         """ serializes __objects to the JSON file """
-        with open(FileStorage.__file_path, "w", encoding="utf-8") as f:
+        file_path = FileStorage.__file_path
+        with open(file_path, "w", encoding="utf-8") as f:
             serial_dict = FileStorage.__objects.copy()
             for key, value in FileStorage.__objects.items():
                 serial_dict[key] = value.to_dict()
