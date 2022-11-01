@@ -1,5 +1,7 @@
 # 0x00. AirBnB clone - The console
 
+![AirBnB logo](http://latfusa.com/media/uploads/2020/12/10/airbnb-678x381.jpg)
+
 > The goal of the entire project is to deploy on our server a simple copy of the AirBnB website.
 
 ### First step: Write a command interpreter to manage our AirBnB objects.
