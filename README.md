@@ -1,5 +1,7 @@
 # 0x00. AirBnB clone - The console
 
+![alt text](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221101%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221101T000555Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4564bc43151273671830b0549993cc2d1c8c011b34f03cf5a5e8c737ea63f28c)
+
 > The goal of the entire project is to deploy on our server a simple copy of the AirBnB website.
 
 ### First step: Write a command interpreter to manage our AirBnB objects.
